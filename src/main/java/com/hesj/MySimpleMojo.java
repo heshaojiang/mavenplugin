@@ -25,7 +25,7 @@ public class MySimpleMojo extends AbstractMojo {
 
     @Parameter(property = "fileType",defaultValue = "java")//多个用逗号分隔
     private String fileTypes;
-    
+
 
     /**
      * 功能描述: 
@@ -41,6 +41,7 @@ public class MySimpleMojo extends AbstractMojo {
         getAllFileByPath(file,result);
         Map<String, Integer> fileTypeToCount = countByFileType(result);
         print(fileTypeToCount);
+        
     }
 
     /**
